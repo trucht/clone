@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-[#0a192f] text-white">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen pb-[var(--footer-height)]">
+        <div className="flex flex-col min-h-screen pb-[var(--footer-height)] md:pb-0">
           <Header />
           <div className="flex flex-grow pt-[var(--nav-height)]">
             <SideMenu />
