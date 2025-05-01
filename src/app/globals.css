@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables */
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --nav-height: 60px;
+  --sidebar-width: 256px;
+  --footer-height: 72px;
+}
+
+/* Base HTML Styles */
+html {
+  /* Typography */
+  font-family: var(--font-pixelify);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeSpeed;
+
+  /* Font Smoothing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Layout */
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Body Styles */
+body {
+  /* Colors */
+  background: var(--background);
+  color: var(--foreground);
+
+  /* Layout */
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  margin-top: var(--nav-height);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Active Navigation Link */
+.active-nav-link {
+  @apply bg-[#112240] text-white;
+}
+
